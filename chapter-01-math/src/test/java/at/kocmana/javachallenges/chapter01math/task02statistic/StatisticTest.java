@@ -14,8 +14,7 @@ class StatisticTest {
       "15,8,63"
   })
   void calculateReturnsCorrectValues(int maxRange, long count, long sum) {
-    Statistic underTest = new Statistic();
-    StatisticResult actualResult = underTest.calcSumAndCountAllNumbersDividableBy2Or7(maxRange);
+    StatisticResult actualResult = Statistic.calcSumAndCountAllNumbersDividableBy2Or7(maxRange);
 
     assertThat(actualResult.getCount()).isEqualTo(count);
     assertThat(actualResult.getSum()).isEqualTo(sum);

@@ -5,7 +5,7 @@ import lombok.Value;
 
 @Value
 @Builder
-public class StatisticResult {
+class StatisticResult {
   long sum;
   long count;
 }

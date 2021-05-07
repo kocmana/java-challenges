@@ -3,10 +3,13 @@ package at.kocmana.javachallenges.chapter01math.task02statistic;
 import java.util.Arrays;
 import java.util.function.IntPredicate;
 import java.util.stream.IntStream;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
-public class Statistic {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+class Statistic {
 
-  public StatisticResult calcSumAndCountAllNumbersDividableBy2Or7(int maxValue) {
+  static StatisticResult calcSumAndCountAllNumbersDividableBy2Or7(int maxValue) {
     IntPredicate dividableByTwo = value -> value % 2 == 0;
     IntPredicate dividableBySeven = value -> value % 7 == 0;
 

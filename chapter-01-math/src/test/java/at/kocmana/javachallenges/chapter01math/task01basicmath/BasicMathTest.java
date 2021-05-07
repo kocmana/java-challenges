@@ -14,8 +14,7 @@ class BasicMathTest {
       "5,5,5"
   })
   void calculateReturnsCorrectValues(int firstValue, int secondValue, int expectedResult) {
-    BasicMath underTest = new BasicMath();
-    int actualResult = underTest.calc(firstValue, secondValue);
+    int actualResult = BasicMath.calc(firstValue, secondValue);
 
     assertThat(actualResult).isEqualTo(expectedResult);
   }

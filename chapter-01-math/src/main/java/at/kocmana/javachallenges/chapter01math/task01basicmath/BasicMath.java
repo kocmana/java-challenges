@@ -1,8 +1,12 @@
 package at.kocmana.javachallenges.chapter01math.task01basicmath;
 
-public class BasicMath {
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
-  public int calc(int firstInput, int secondInput) {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+class BasicMath {
+
+  static int calc(int firstInput, int secondInput) {
     return (firstInput * secondInput / 2) % 7;
   }
 
